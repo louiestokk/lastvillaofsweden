@@ -35,6 +35,7 @@ function App() {
     img13,
     img14
   ];
+  const test = 0;
   return (
     <div className="App">
       <header
