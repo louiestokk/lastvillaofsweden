@@ -69,7 +69,7 @@ function App() {
           <Carousel autoPlay={true}>
             {imageArray?.map((img, i) => (
               <div key={i} style={{ width: "100%", height: "50%" }}>
-                <img src={img} />
+                <img src={img} loading="lazy" />
               </div>
             ))}
           </Carousel>
