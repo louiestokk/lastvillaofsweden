@@ -1,44 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Righteous&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-header {
-  font-family: "Abril Fatface", cursive;
-  background: rgba(0, 0, 0, 0.9);
-}
 a {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 0.75rem;
+  text-decoration: none;
+  list-style: none;
 }
