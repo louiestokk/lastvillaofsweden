@@ -140,7 +140,7 @@ const CheckoutForm = () => {
       )}
 
       <form style={{ width: "100%" }} onSubmit={handleStripeSubmit}>
-        <PaymentElement
+        <CardElement
           id="card-element"
           options={cardStyle}
           onChange={handleStripeChange}
