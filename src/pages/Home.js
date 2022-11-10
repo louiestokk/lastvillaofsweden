@@ -10,8 +10,13 @@ import {
 } from "@material-ui/core";
 import { Email, Phone, WhatsApp } from "@material-ui/icons";
 import map from "../assets/villapaje.png";
+
 const useStyles = makeStyles({
-  paper: {
+  section: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-evenly",
+    alignItems: "center",
     "@media(max-width: 780px)": {
       flexDirection: "column",
       fontSize: "0.6rem"
@@ -20,23 +25,18 @@ const useStyles = makeStyles({
 });
 const Home = () => {
   const classes = useStyles();
+
   return (
     <div>
       <Header />
       <CarouselComp />
       <Container>
         <Paper style={{ textAlign: "center" }}>
-          <Typography gutterBottom>Contact</Typography>
-          <Container
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-evenly"
-            }}
-            className={classes.paper}
-          >
-            <Box>
+          <Typography variant="h6" gutterBottom>
+            Contact
+          </Typography>
+          <section className={classes.section}>
+            <div style={{ margin: "0.5rem 0" }}>
               <Phone style={{ color: "purple" }} />
               <Typography>Local</Typography>
               <Typography>
@@ -49,13 +49,13 @@ const Home = () => {
                   Gerrard: +255 715168659
                 </a>
               </Typography>
-            </Box>
-            <Box>
+            </div>
+            <div style={{ margin: "0.5rem 0" }}>
               <WhatsApp style={{ color: "green" }} />
               <Typography>WhatsApp</Typography>
               <Typography>Louie: +46 768670210</Typography>
-            </Box>
-            <Box>
+            </div>
+            <div style={{ margin: "0.5rem 0" }}>
               <Email style={{ color: "red" }} />
               <Typography>Email</Typography>
               <Typography>
@@ -66,8 +66,8 @@ const Home = () => {
                   louiestokk@gmail.com
                 </a>
               </Typography>
-            </Box>
-          </Container>
+            </div>
+          </section>
         </Paper>
       </Container>
       <div
